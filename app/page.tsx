@@ -88,6 +88,7 @@ function DreamBlock({
   children: React.ReactNode;
   className?: string;
   gradient?: string;
+  onClick?: Function;
 }) {
   const [hit, setHit] = useState(false);
 
