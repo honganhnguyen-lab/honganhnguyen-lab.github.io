@@ -401,6 +401,12 @@ export default function Portfolio() {
                 <div className="space-y-4">
                   {[
                     {
+                      company: "Reality AI Lab",
+                      role: "Generative AI Engineer",
+                      period: "July 2025 - Aug 2025",
+                      icon: "🌟"
+                    },
+                    {
                       company: "Zen8labs",
                       role: "Software Engineer",
                       period: "Oct 2022 - Aug 2024",
@@ -551,49 +557,51 @@ export default function Portfolio() {
                       Projects
                     </h2>
                   </div>
-                  <Button
-                    size="sm"
-                    variant="ghost"
-                    className="text-gray-600 hover:text-blue-500 hover:bg-blue-100/50"
-                  >
-                    <Shuffle size={16} className="mr-2" />
-                    Shuffle
-                  </Button>
                 </div>
 
                 <div className="space-y-6 flex-1">
                   {/* Featured Project */}
                   <div className="bg-gradient-to-br from-pink-400/20 to-purple-500/20 rounded-xl p-4 border border-white/30">
                     <div className="flex items-center gap-2 mb-3">
-                      <span className="text-xl">🥤</span>
+                      <span className="text-xl">🗑️</span>
                       <h3 className="font-bold text-gray-800">
-                        Sip n Play Café Website
+                        AI-Powered Waste Classification System
                       </h3>
                     </div>
                     <div className="bg-gradient-to-r from-pink-400 to-purple-500 text-white text-xs inline-block px-3 py-1 rounded-full mb-3">
-                      Hackathon Winner 🏆
+                      Hackathon 2025 - Honor Reward
                     </div>
                     <p className="text-sm text-gray-700 mb-4 leading-relaxed">
-                      Website revamp for Sip & Play Boardgame Cafe, featuring
-                      500+ games and a modern, interactive design.
+                      An AI-powered recognition and automated sorting to reduce
+                      human error in waste disposal
                     </p>
                     <div className="flex flex-wrap gap-2 mb-4">
-                      {["React", "Next.js", "Tailwind", "Framer Motion"].map(
-                        (tech) => (
-                          <span
-                            key={tech}
-                            className="bg-white/60 text-gray-700 text-xs px-2 py-1 rounded-full"
-                          >
-                            {tech}
-                          </span>
-                        )
-                      )}
+                      {[
+                        "Stepper motors (NEMA 17)",
+                        "ONNX",
+                        "Socket",
+                        "Python",
+                        "OpenCV"
+                      ].map((tech) => (
+                        <span
+                          key={tech}
+                          className="bg-white/60 text-gray-700 text-xs px-2 py-1 rounded-full"
+                        >
+                          {tech}
+                        </span>
+                      ))}
                     </div>
                     <Button
                       size="sm"
                       className="bg-gradient-to-r from-pink-400 to-purple-500 text-white border-0 shadow-lg"
                     >
-                      View Project
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://github.com/honganhnguyen-lab/devhack25-self-sorting-trashcan"
+                      >
+                        View Project
+                      </a>
                       <ArrowRight className="w-4 h-4 ml-2" />
                     </Button>
                   </div>
@@ -602,9 +610,9 @@ export default function Portfolio() {
                   <div className="space-y-3">
                     {[
                       {
-                        name: "Mine Alliance Platform",
-                        tech: "AWS, ChatGPT-4",
-                        icon: "🔗"
+                        name: "Provider Family Service Application",
+                        tech: "React Native, MongoDB, NodeJs, ElasticSearch",
+                        icon: "📱"
                       },
                       {
                         name: "Portfolio Website",
@@ -612,9 +620,9 @@ export default function Portfolio() {
                         icon: "💼"
                       },
                       {
-                        name: "Task Management App",
-                        tech: "React, Node.js",
-                        icon: "📝"
+                        name: "Agile Management web app",
+                        tech: "Java, JavaFX",
+                        icon: "🏴󠁩󠁤󠁪󠁷󠁿"
                       }
                     ].map((project, index) => (
                       <motion.div
